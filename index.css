@@ -1,0 +1,323 @@
+/*index.css*/
+body{
+	padding:0;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+}
+.p10{
+	padding: 0 10px;	
+}
+.sa{
+	justify-content: space-around;
+}
+.sb{
+	justify-content: space-between;
+}
+.tc{
+	text-align: center;
+}
+.arrow-down{
+	width: 7px;
+	height: 7px;
+	border-top:1px solid #fbb700;
+	border-right:1px solid #fbb700;
+	transform: rotate(45deg);
+}
+.top{ /*食品安全*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 12px;
+	background-color: #fffcec;
+	color:#fbb700;
+	margin-top: 0px;
+	height: 32px;
+	line-height: 32px;
+}
+header{  /*头部*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 44px;
+	background-color: #ff4683;
+	color:#fff;
+	font-size: 16px;
+}
+header a{
+	color:#fff;
+	opacity: .6;
+}
+header h3{
+	flex:1 1 auto;
+	align-self: stretch;
+	margin:0 auto;
+	background: url(img/百度糯米.png) center center no-repeat;
+	background-size: 78px auto;
+	text-indent: -9999px;
+}
+.icon-location{
+	background: url(img/我的.png) center center no-repeat;
+    width: 15px;
+    height: 24px;
+    display: inline-block;
+    background-size: 15px;
+    position: relative;
+    top: 5px;
+}
+header .city-link{
+	display: flex;
+}
+header .arrow-down{
+	width: 8px;
+	height: 7px;
+	border-bottom:1px solid #fff;
+	border-right:1px solid #fff;
+	transform: rotate(45deg);
+	margin-right: 4px;
+	position: relative;
+	top:5px;
+	left:5px;
+}
+.search{				/*搜索框*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: #f1f1f1;
+}
+.search form{
+	margin:auto 5px;
+	flex:1 1 auto;
+	background: #fff;
+	height: 20px;
+	border:1px solid #ddd;
+	border-radius: 15px;
+	padding:5px;
+	display: flex;
+	justify-content: space-between;
+}
+.search form input{      /* 搜索区域中的输入框*/
+	/*font-size: */
+	padding:0 5px;
+	border:none;
+	flex:1 1 auto;
+	font-size: 14px;
+}
+.search form .submit{     /* 搜索区域中的按钮*/
+	background: url(img/btn.png) center center no-repeat ;
+	border:none;
+	width: 20px;
+	background-size: 12px;
+}
+input:focus{
+	outline:0;			/*输入框获取焦点后，不要有外框线*/
+}
+
+.adv{				/*广告*/
+	padding:0;
+}
+.adv img{
+	width: 100%;
+}
+.categroy {
+	padding:10px;
+	border-bottom: 1px solid #ddd;
+}
+.categroy li{
+	margin-bottom: 10px;
+}
+.categroy img{
+	width: 40px;
+	height: 40px;
+}
+.top10{
+	display: flex;
+}
+
+.top10 .top10txtbox{
+	display: flex;
+	flex-flow: column nowrap;
+	white-space: nowrap;
+	justify-content: center;
+}
+.top10 .top10txtbox  h3{
+	color:#222222;
+	margin-bottom: 10px;
+
+}
+.top10 .top10txtbox p{
+	color:#888;
+	margin:5px 0;
+}
+.top10 .top10txtbox .timecount{
+	color:#ee4339;
+	font-size: 18px;
+}
+.top10 .topimgbox{
+	flex:1 1 auto;
+}
+.top10 .topimgbox img{
+	width: 100%
+}
+
+.guessfav .flex{ 		/*------------------猜你喜欢*/
+	
+}
+.guessfav .flex .imgbox{
+	position: relative;
+	margin-right: 20px;
+}
+.guessfav .flex .txtbox{
+	flex:1 1 auto;
+}
+.guessfav img{
+	width: 120px;
+}
+.freeorder{
+	background: url(img/免预约.png) no-repeat;
+	background-size: 36px 36px;
+	width: 36px;
+	height: 36px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.fr{
+	float: right;
+}
+
+
+
+section,header,footer{	/*每个项目隔开一点*/
+	padding:0 10px;
+}
+h4{
+	color:#22222d;
+	font-size:.16rem;
+}
+.f-normal{
+	color:#888;
+	font-size: .12rem;
+}
+.newprice{
+	color:#ff4683;
+	font-size: 16px;
+	font-weight: 700;
+}
+.section-title{		
+	padding:10px 0;
+	align-items: center;
+}
+.section-title h3{
+	margin-right: auto;
+}
+.section-title .arrow-down{
+	width: 7px;
+    height: 7px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    border-left:none;
+    border-bottom: none;
+    transform: rotate(45deg);
+
+}
+.content li{		/*猜你喜欢商品*/
+	padding:10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.desc{
+	height: 32px;
+
+}
+.privilege{
+	border:1px solid #ff4683;
+	border-radius: 2px;
+	color:#ff4683;
+}
+.service .flex{
+}
+.service .item{
+	flex:1 1 auto;
+	border-right:1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-around;
+	padding:20px 20px;
+}
+.service .item .txtbox{
+    flex: 1 1 auto;
+	text-align: right;
+	/*background-color: #ccc;*/
+	order:2;
+}
+.service .item .imgbox{
+	flex: 0 0 auto;
+	order:1;
+}
+.service .item img{
+	width: 60px;
+	height: 60px;
+}
+.service .item:last-child{
+	border-right:none;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	padding:15px 10px;
+	color:#636363;
+	height: 150px;
+}
+footer .navinfo a{
+
+	display: inline-block;
+	border:1px solid #ccc;
+	padding:2px 5px;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+footer .link{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+footer .link a{
+	flex:1 1 auto;
+	line-height: .12rem;
+	text-align: center;
+	border-right:1px solid #ddd;
+}
+footer .link a:last-child{
+	border-right: none;
+}
+footer .copyright{
+	margin-bottom:10px;
+	color:#ddd;
+}
+footer .record{
+	color:#939393;
+}
+footer .record img{
+	width: 16px;
+}
+
+.bottom-bar{
+	position: fixed;
+	bottom:0;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	border-top: 2px solid #e4e4e4;
+	background: #fdfdfd;
+	height: 40px;
+}
+.bottom-bar a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.bottom-bar a img{
+	margin:0 auto;
+	width: 20px;
+}

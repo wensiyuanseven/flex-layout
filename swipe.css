@@ -1,0 +1,41 @@
+/**轮播图**/
+.swipe {
+		  overflow: hidden;
+		  /*visibility: hidden;*/
+		  position: relative;
+		}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative; /*一定不可少，基于自己的位置做的动画*/
+}
+.swipe-wrap > div >a{
+	display: block;
+	width: 100%;
+}
+.swipe-wrap > div > a >img{
+	display: block;
+	width: 100%;
+}
+.indrector{
+	position: absolute;
+	bottom: 10px;
+	left:50%;
+	margin-left: -30px;
+}
+.swipe ul li{
+	list-style: none;
+	float:left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	margin:5px;
+}
+.cur{
+	background: red !important;
+}
